@@ -5,11 +5,11 @@ The Haversine formula is applied to calculate the distances between each propert
 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.haversine_distances.html
 
 # get data from sql 
-'''
-connection = sqlite3.connect('proj4_grp2.sqlite')
+
+'''connection = sqlite3.connect('proj4_grp2.sqlite')
 data = pd.read_sql_query("SELECT * FROM realestate_info where state = 'AZ'", connection)
-data.head()
-'''
+data.head()'''
+
 
 
 '''
