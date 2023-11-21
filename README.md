@@ -5,14 +5,14 @@ The Haversine formula is applied to calculate the distances between each propert
 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.haversine_distances.html
 
 # get data from sql 
-
-'''connection = sqlite3.connect('proj4_grp2.sqlite')
+```
+connection = sqlite3.connect('proj4_grp2.sqlite')
 data = pd.read_sql_query("SELECT * FROM realestate_info where state = 'AZ'", connection)
-data.head()'''
+data.head()```
 
 
 
-'''
+```
 def get_similar_nearby_properties(ref_latitude, ref_longitude, ref_bedroom_number, 
                                   ref_bathroom_number, ref_price, data, max_distance_km=10,
                                 max_bedroom_number_diff=1, max_bathroom_number_diff=1, max_price_diff=50000):
@@ -28,10 +28,10 @@ def get_similar_nearby_properties(ref_latitude, ref_longitude, ref_bedroom_numbe
 
   #Properties within the specified maximum distance are filtered.
     nearby_properties = data[data['distance'] <= max_distance_km]
-'''
+```
 
 # Find and display properties similar to a reference property based on specified criteria. 
-'''
+```
 reference_latitude = 35.114260 #Latitude of the reference property.
 reference_longitude = -114.618385 #Longitude of the reference property.
 reference_bedrooms = 2  #Number of bedrooms in the reference property.
@@ -45,4 +45,4 @@ similar_nearby_properties = get_similar_nearby_properties(
 #The function returns the DataFrame of similar properties.
 print("Similar Nearby Properties:")
 print(similar_nearby_properties[['property_id', 'latitude', 'longitude', 'distance', 'bedroom_number', 'bathroom_number', 'living_space', 'price']])
-'''
+```
