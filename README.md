@@ -1,5 +1,6 @@
 # Project-Group-2
 Housing Prediction
+
 #Jihye's Part
 #This Python script, get_similar_nearby_properties, is designed to find properties that are similar to a given reference property based on geographic location, number of bedrooms, number of bathrooms, and price. It utilizes the Haversine formula for calculating distances between geographical coordinates.
 
@@ -127,7 +128,16 @@ silhouette_avg = silhouette_score(features_for_clustering, numeric_dataset['Clus
 print(f"Silhouette Score: {silhouette_avg}")
 
 ```
-Erjola's Part
+# Erjola's Part
+
+The Housing dataset is taken from the Kaggle website. The dataset has 500,000+ Sample For Sale Homes Data in the US. and it consists of explanatory variables which describes almost every aspect of residential homes in US.
+
+This is a supervised learning to learn the relationship between the independent variables such as "city","state","latitude","longitude","price","bedroom_number","bathroom_number","price_per_unit","living_space","land_space","property_type", and the dependent variable which is price of the house. The objective is to predict the final price of each home and I have used following regression models to predict the sale price:
+
+-Linear Regression
+-Random Forest
+-Lasso Regression
+
 
 
 
