@@ -1,4 +1,5 @@
 # Project-Group-2
+Housing Prediction
 #Jihye's Part
 #This Python script, get_similar_nearby_properties, is designed to find properties that are similar to a given reference property based on geographic location, number of bedrooms, number of bathrooms, and price. It utilizes the Haversine formula for calculating distances between geographical coordinates.
 
@@ -126,4 +127,7 @@ silhouette_avg = silhouette_score(features_for_clustering, numeric_dataset['Clus
 print(f"Silhouette Score: {silhouette_avg}")
 
 ```
+Erjola's Part
+
+
 
