@@ -4,15 +4,16 @@ Jihye's Part
 The Haversine formula is applied to calculate the distances between each property and the reference property.
 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.haversine_distances.html
 
-# get data from sql 
-```
+
+```python
 connection = sqlite3.connect('proj4_grp2.sqlite')
 data = pd.read_sql_query("SELECT * FROM realestate_info where state = 'AZ'", connection)
-data.head()```
-
-
-
+data.head()
 ```
+
+
+
+```python
 def get_similar_nearby_properties(ref_latitude, ref_longitude, ref_bedroom_number, 
                                   ref_bathroom_number, ref_price, data, max_distance_km=10,
                                 max_bedroom_number_diff=1, max_bathroom_number_diff=1, max_price_diff=50000):
@@ -31,7 +32,7 @@ def get_similar_nearby_properties(ref_latitude, ref_longitude, ref_bedroom_numbe
 ```
 
 # Find and display properties similar to a reference property based on specified criteria. 
-```
+```python
 reference_latitude = 35.114260 #Latitude of the reference property.
 reference_longitude = -114.618385 #Longitude of the reference property.
 reference_bedrooms = 2  #Number of bedrooms in the reference property.
