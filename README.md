@@ -13,6 +13,7 @@ The Python script, get_similar_nearby_properties, is specifically designed to id
 This part of the project employs unsupervised machine learning techniques, specifically K-Means clustering, to identify trends, hotspots, and investment opportunities within the four states in the U.S.: Texas, California, Arizona, and Illinois. These states were selected due to their sizable property datasets.
 
 - Visualizing and Analyzing Data
+- Link for Tableau Visualization         https://public.tableau.com/app/profile/sughra.shadab/vizzes
 We used Tableau to create different charts, graphs, maps, dashboards, and stories for visualizing and analyzing data to help home buyers in making decisions. we used and compare two data sets and analyse the following questions
 1. Relationship between Location and Price
 2. Property count and Property Types
