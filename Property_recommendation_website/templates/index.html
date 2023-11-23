@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search</title>
+
+    <script>
+        function clickToFillForm(lat, lng, bed, bath, price) {
+            console.log(lat, lng, bed, bath, price);
+            document.getElementById("lat").value = lat;
+            document.getElementById("lng").value = lng;
+            document.getElementById("bed").value = bed;
+            document.getElementById("bath").value = bath;
+            document.getElementById("price").value = price;
+        }
+    </script>
+</head>
+
+
+<body>
+    <h1>Property Search</h1>
+
+    <p>Find properties that match your criteria!</p>
+    </body>
+    <form action="/search" method="post">
+        <label for="latitude">Latitude:</label>
+        <input id="lat" type="text" name="latitude" required><br>
+
+        <label for="longitude">Longitude:</label>
+        <input id="lng" type="text" name="longitude" required><br>
+
+        <label for="bedrooms">Bedrooms:</label>
+        <input id="bed" type="number" name="bedrooms" required><br>
+
+        <label for="bathrooms">Bathrooms:</label>
+        <input id="bath" type="number" name="bathrooms" required><br>
+
+        <label for="price">Price:</label>
+        <input id="price" type="number" name="price" required><br>
+
+        <button type="submit">Search</button>
+
+
+    <br>
+    <p>Please type the property's information!</p>
+    <br>
+    <br>
+
+<div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.114260, -114.618385, 2, 1, 54900)">
+        <img src="{{url_for('static', filename='pexels-binyamin-mellish-1396132.jpg')}}" width="250">
+        <p>
+            Address: 854 Citrus St, Bullhead City,<br> AZ 86442<br>
+            Location : Bullhead City<br>
+            Latitude :35.114260 <br>
+            Longitude :-114.618385<br>
+            Bedroom_number : 2<br>
+            Bathroom_number :1 <br>
+            Price : 54900
+        </p>
+</div>
+
+<div style="float: left; margin-right: 10px;" onclick="clickToFillForm(34.91736, -114.15683, 2, 2, 209000)">
+        <img src="{{url_for('static', filename='pexels-pixabay-164522.jpg')}}" width="250">
+        <p>
+            Address: 10739 S Paradise Trail Rd, Yucca,<br> AZ 86438<br>
+            Location : YUCCA <br>
+            Latitude :34.91736<br>
+            Longitude :-114.15683<br>
+            Bedroom_number : 2<br>
+            Bathroom_number :2 <br>
+            Price : 209000
+        </p>
+    </div>
+    
+    <div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.114260, -114.618385, 2, 1, 54900)">
+        <img src="{{url_for('static', filename='pexels-pixabay-164558.jpg')}}" width="250">
+        <p>
+            Address: 1825 E Shore Villas Dr UNIT 51,<br> Bullhead City, AZ 86442<br>
+            Location : Bullhead City<br>
+            Latitude :35.1227 <br>
+            Longitude :-114.58975<br>
+            Bedroom_number : 2<br>
+            Bathroom_number :3 <br>
+            Price : 349900
+        </p>
+    </div>
+    
+    <div style="float: left; margin-right:10px;" onclick="clickToFillForm(34.766987, -114.49841, 4, 2, 189500)">
+        <img src="{{url_for('static', filename='pexels-pixabay-221024.jpg')}}" width="250">
+        <p>
+            Address: 4556 Park Dr, Topock,<br> AZ 86436<br>
+            Location : Topock<br>
+            Latitude :34.766987 <br>
+            Longitude :-114.49841<br>
+            Bedroom_number : 4<br>
+            Bathroom_number :2 <br>
+            Price : 189500
+        </p>
+    </div>
+    
+    <div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.26146, -113.987495, 4, 3, 269000)">
+        <img src="{{url_for('static', filename='pexels-pixabay-259751.jpg')}}" width="250">
+        <p>
+            Address: 3678 E Andrea Dr, Kingman,<br> AZ 86409<br>
+            Location : Kingman<br>
+            Latitude :35.26146 <br>
+            Longitude :-113.987495<br>
+            Bedroom_number : 4<br>
+            Bathroom_number :3 <br>
+            Price : 269000
+        </p>
+    </div>
+
+    <div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.194294, -114.06564, 3, 2, 299000)">
+        <img src="{{url_for('static', filename='pexels-binyamin-mellish-106399.jpg')}}" width="250">
+        <p>
+            Address: 722 Silver St, Kingman,<br> AZ 86401<br>
+            Location : Kingman<br>
+            Latitude :35.194294 <br>
+            Longitude :-114.06564<br>
+            Bedroom_number : 3<br>
+            Bathroom_number :2 <br>
+            Price : 299000
+        </p>
+    </div>
+
+    <div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.40204, -113.86121, 3, 2, 299000)">
+        <img src="{{url_for('static', filename='pexels-scott-webb-1029599.jpg')}}" width="250">
+        <p>
+            Address: 9601 N Concho Dr, Kingman,<br> AZ 86401<br>
+            Location : Kingman<br>
+            Latitude :35.40204 <br>
+            Longitude :-113.86121<br>
+            Bedroom_number : 3<br>
+            Bathroom_number :2 <br>
+            Price : 299000
+        </p>
+    </div>
+
+    <div style="float: left; margin-right: 10px;" onclick="clickToFillForm(35.08363, -114.6044, 3, 2, 429000)">
+        <img src="{{url_for('static', filename='pexels-jens-mahnke-1105754.jpg')}}" width="250">
+        <p>
+            Address: 2564 Country Club Dr,<br> Bullhead City, AZ 86442<br>
+            Location : Bullhead City<br>
+            Latitude :35.08363 <br>
+            Longitude :-114.6044<br>
+            Bedroom_number : 3<br>
+            Bathroom_number :2 <br>
+            Price : 429000
+        </p>
+    </div>
+
+    </form>
+</body>
+</html>

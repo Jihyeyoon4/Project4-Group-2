@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+</head>
+<body>
+    <h1>Search Result</h1>
+    {% if properties.empty %}
+        <p>No similar properties found.</p>
+    {% else %}
+        <ul>
+            {% for index, row in properties.iterrows() %}
+                <li>
+                    <strong>Property {{ row['address'] }}</strong><br>
+                    Bedrooms: {{ row['bedroom_number'] }}<br>
+                    Bathrooms: {{ row['bathroom_number'] }}<br>
+                    Price: ${{ row['price'] }}<br>
+                    Living_space: ${{ row['living_space'] }}<br>
+                    Property_type: {{ row['property_type'] }}<br>
+                    Distance: {{ row['distance'] }} km
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
