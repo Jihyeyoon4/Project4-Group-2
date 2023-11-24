@@ -87,13 +87,13 @@ Unsupervised learning models, which include clustering algorithms, don't have a 
 ### Market Analysis
 This section of the project employs unsupervised machine learning techniques, specifically K-Means clustering, to identify trends, hotspots, and investment opportunities within the four states in the U.S.: Texas, California, Arizona, and Illinois. These states were selected due to being the states with the biggest amount of properties in the dataset.
 
-1. Preprocessing
+1. Preprocessing:
 To enhance model performance and convergence speed, the data underwent normalization using StandardScaler.
 
-2. K-Means Model and Elbow Method
+2. K-Means Model and Elbow Method:
 The dataset was segmented into distinct clusters using the K-Means algorithm, which groups data points based on similarities. In the context of real estate, this segmentation helps categorize properties based on various features such as location, size, amenities, and price. The Elbow Method was employed to determine the optimal number of clusters for the data.
 
-3. Results
+3. Results:
 Visualizations were created in the form of scatter plots for each state, showcasing the relationship between Living Space/Price and Bedroom Number/Price. The analysis of Living Space indicated that California and Texas predominantly have larger properties. Meanwhile, the Bedroom Number analysis revealed that most states typically feature properties with a standard number of bedrooms, typically ranging between 0 and 2.
 
 ### Investment Opportunities 
