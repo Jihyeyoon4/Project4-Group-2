@@ -3,8 +3,8 @@
 ## Overview 
 This project focuses on the development of machine learning models for real estate applications, including price prediction, recommendation systems, and market analysis. Leveraging a dataset sourced from Kaggle, the objective is to create robust predictive models that can assist home buyers, sellers and real estate professionals in making informed decisions.
 
-## Requirements
-Sklearn, Python, SQLite, Matplotlib, Numpy
+## Dependencies Requirements
+Pandas, Numpy, Seaborn, Sklearn, RandomForestRegressor, SQLite, Matplotlib
 
 ## Project Division
 
@@ -25,20 +25,22 @@ Identified and handled outliers using statistical methods.
 
 4. Machine Learning Model: RandomForestRegressor:
 Developed a machine learning model using the RandomForestRegressor algorithm.
-Chose 'Price' as the target variable and 'Bedroom number,' 'Bathroom number,' 'Living space (sqft),' and 'City' as features.
+Chose 'Price' as the Target variable and 'Bedroom number,' 'Bathroom number,' 'Living space (sqft),' and 'City' as Features.
 Split the data into training and testing sets.
 Trained the model on the training data.
 
 5. Predictions and Evaluation:
 Made predictions using the trained model on both training and testing data.
-Evaluated the model performance using R-squared (R2) scores and Mean Absolute Error (MAE).
+Evaluated the model performance using R-squared (R2) scores and Mean Absolute Error (MAE) on Training and Testing data.
 
 6. Results
 - For a sample client input:
-(Python code) client_input = pd.DataFrame({'bedroom_number': [3], 'bathroom_number': [2], 'living_space': [1500], 'city': ['Chino Valley']})
+(Python code) client_data = pd.DataFrame({'bedroom_number': [4], 'bathroom_number': [3], 'living_space': [2500], 'city': ['Chino Valley']})
 
-- The model provided the following results:
-Predicted Price: $320,734.04 R-squared (R2) Score on Training Data: 0.9621 R-squared (R2) Score on Testing Data: 0.7621 Mean Absolute Error on Training Data: $40,150.86 Mean Absolute Error on Testing Data: $96,945.73
+- The model provided the following results and were evaluated by MAE and R2square
+Predicted Price: $516541.8475 
+R-squared (R2) Score on Training Data: 0.9621 and R-squared (R2) Score on Testing Data: 0.7621 
+Mean Absolute Error on Training Data: $40,150.86 and Mean Absolute Error on Testing Data: $96,945.73
 
  - Price Prediction
 This supervised learning task aims to understand the relationship between independent variables such as "city," "state," "latitude," "longitude," "price," "bedroom_number," "bathroom_number," "price_per_unit," "living_space," "land_space," "property_type," and the dependent variable, which is the price of the house. The objective is to predict the final price of each home using the following regression models: Linear Regression, Random Forest and Lasso Regression.
