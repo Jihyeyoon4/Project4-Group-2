@@ -3,7 +3,7 @@
 ## Overview 
 This project focuses on the development of machine learning models for real estate applications, including price prediction, recommendation systems, and market analysis. Leveraging a dataset sourced from Kaggle, the objective is to create robust predictive models that can assist home buyers, sellers and real estate professionals in making informed decisions.
 
-# Requirements
+## Requirements
 Sklearn, Python, SQLite, Matplotlib, Numpy
 
 ## Project Division
